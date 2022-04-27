@@ -25,7 +25,7 @@ local function moveCoin()
 	coinSprite:moveTo(randX, randY)
 end
 
-local function initalize()
+local function initialize()
 	math.randomseed(playdate.getSecondsSinceEpoch())
 	local playerImage = gfx.image.new("images/player")
 	playerSprite = gfx.sprite.new(playerImage)
@@ -51,7 +51,7 @@ local function initalize()
 	resetTimer()
 end
 
-initalize()
+initialize()
 
 function playdate.update()
 	if playTimer.value == 0 then
